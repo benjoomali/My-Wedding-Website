@@ -10,7 +10,8 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
-    "vue-fullpage.js": "^0.1.4"
+    "vue-fullpage.js": "^0.1.4",
+    "vue-gallery": "^2.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",

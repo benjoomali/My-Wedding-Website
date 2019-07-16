@@ -1579,6 +1579,11 @@ bluebird@^3.1.1, bluebird@^3.5.1, bluebird@^3.5.5:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.5.tgz#a8d0afd73251effbbd5fe384a77d73003c17a71f"
   integrity sha512-5am6HnnfN+urzt4yfg7IgTbotDjIT/u8AJpEt0sIU9FtXfVeezXAPKswrG+xKUCOYAINpSdgZVDU6QFh+cuH3w==
 
+blueimp-gallery@^2.33.0:
+  version "2.34.1"
+  resolved "https://registry.yarnpkg.com/blueimp-gallery/-/blueimp-gallery-2.34.1.tgz#344cced1329f7a4b155c892504a108cdb32071b0"
+  integrity sha512-Ezdf8AA55WY31lBHGVrDI4c58U0wLuxQnU0+PK950tnPve+f5r2MVoHrArdq1GPdnTqF95w1mU4pfVcIv+69fg==
+
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   version "4.11.8"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
@@ -3643,6 +3648,11 @@ fsevents@^1.2.7:
   dependencies:
     nan "^2.12.1"
     node-pre-gyp "^0.12.0"
+
+fullpage.js@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-3.0.7.tgz#27d4815f39ad26019bf96dbc7644ac7ec6226f39"
+  integrity sha512-kKgwNWGUY/nMCMWuDJph2D4lSLmRqcEqD9zGR4no7e85sGLGUTdB5xWUUDZCXEp3nkPNVMOVJLFhJq5DbIY1UA==
 
 function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
@@ -7834,6 +7844,20 @@ vue-eslint-parser@^5.0.0:
     espree "^4.1.0"
     esquery "^1.0.1"
     lodash "^4.17.11"
+
+vue-fullpage.js@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/vue-fullpage.js/-/vue-fullpage.js-0.1.4.tgz#344946053d6d0b1f88826d1762e9cbe3cd5dd8b6"
+  integrity sha512-O3LgyUKsKfJcMeA4FZGibRNZ3vvtsBNZ6ZgYsH4KoRqzkDrUHutlQo6yZTMT97BVnHAdzbXeQzgVT7liGH0D4g==
+  dependencies:
+    fullpage.js "^3.0.7"
+
+vue-gallery@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/vue-gallery/-/vue-gallery-2.0.0.tgz#07d29e9169701d7d19b6b5f643038f1d50606329"
+  integrity sha512-6BCItrHwH0v0p2T8Pf6iAUGOi7sZtDt/WLn+DiRznfMec/WPPjT/udBABChkyGGzdn/FBHoF768ITAjLDXfMLw==
+  dependencies:
+    blueimp-gallery "^2.33.0"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.3"
