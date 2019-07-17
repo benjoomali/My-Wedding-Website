@@ -343,11 +343,7 @@ hr {
       background-position-x: 0;
     }
   }
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
+
 
   #menu {
     position: fixed;
@@ -367,6 +363,6 @@ hr {
   .no-show-mobile {
     display: none;
     @include sm {
-      display: block;
+      display: inline-block;
     }
   }

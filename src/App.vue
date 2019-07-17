@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <ul id="menu">
-      <li class="no-show-mobile active" data-menuanchor="home"><a href="#home"> Wedding</a></li>
+      <li class="no-show-mobile" data-menuanchor="home"><a href="#home"> Wedding</a></li>
       <li data-menuanchor="ceremony"><a href="#ceremony">Ceremony</a></li>
       <li data-menuanchor="reception"><a href="#reception">Reception</a></li>
       <li class="no-show-mobile" data-menuanchor="story"><a href="#story">Our Story</a></li>
