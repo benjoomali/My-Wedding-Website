@@ -1,0 +1,98 @@
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 3em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+  h3 {
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #fff;
+    margin: 1rem 0;
+    padding:0;
+  }
+
+  .main-content span {
+    font-size: 1.8em;
+    font-family: helvetica;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .overlay-text {
+    position: relative;
+    z-index: 100;
+  }
+
+  @media screen and (min-width: 576px) {
+    h1{
+      font-size: 5em;
+    }
+
+    h3 {
+      font-size: 3em;
+    }
+  }
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+  .main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 15%;
+    z-index: 100;
+  }
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(../imgs/pic5.jpg);
+	}
+  @media screen and (min-width: 576px) {
+    #section0 {
+      background-image: url(../imgs/pic1.jpg);
+      background-position-y: calc(100% - 65%);
+      background-repeat: no-repeat;
+    }
+  }
+	#section1{
+		background-image: url(../imgs/church.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section2{
+		background-image: url(../imgs/pic3.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section2 h1{
+		color: #000;
+	}
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}

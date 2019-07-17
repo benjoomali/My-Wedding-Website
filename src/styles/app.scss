@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+@font-face {
+  font-family: 'Autumn Chant';
+  src: url('./assets/autumnchant.otf');
+}
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+//colors
+$copper: #b87333;
+$green: #89a380;
+$redorange: #bf7858;
+$darkgreen: #3e5835;
+$beige: #b3a59c;
+$darkblue: #466061;
+$taupe: #a7aea6;
+
+@mixin sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+@mixin md {
+   @media (min-width: #{$screen-md-min}) {
+    @content;
+   }
+}
+
+@mixin lg {
+   @media (min-width: #{$screen-lg-min}) {
+    @content;
+   }
+}
+
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+    @content;
+   }
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #222;
+  font-family: "Muli", Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+hr {
+  width: 20%;
+  border: 0 ;
+  border-top: 1px solid #fff;
+}
+
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 2.4em;
+		font-family: "Muli",helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+    text-shadow: 0 1px 1px #2d2d2d;
+    font-weight: 700;
+    @include sm {
+      font-size: 5em;
+      margin-bottom: 14px;
+    }
+	}
+
+  .main-header {
+    font-family: "Autumn Chant", "Muli", helvetica;
+    font-size: 1.4em;
+    font-weight: 300;
+    @include sm {
+      font-size: 3.2em;
+    }
+  }
+
+
+  h3 {
+    font-size: 1.8em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    margin: 1rem 0;
+    padding:0;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 1px #2d2d2d;
+    @include sm {
+      font-size: 3em;
+    }
+  }
+
+  .date {
+    font-size: 1.4em;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 1px 1px #2d2d2d;
+    @include sm {
+      font-size: 2.2em;
+    }
+  }
+
+  .address {
+    font-size: 1.6em;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 1px 1px #2d2d2d;
+    margin-bottom: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    @include sm {
+      font-size: 2.2em;
+    }
+  }
+
+  .time {
+    margin: 2em 0;
+    font-size: 1.6em;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 1px 1px #2d2d2d;
+    text-decoration: none;
+    @include sm {
+      font-size: 2.2em;
+    }
+  }
+
+  .btn {
+    display: block;
+    background: $green;
+    border: 1px solid $green;
+    border-radius: 20px;
+    padding: .5em;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: all .3s;
+    margin: .6em 0;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+      color: $green;
+    }
+  }
+
+  .description {
+        display: block;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2em;
+        padding: 1em;
+        @include sm {
+          font-size: 1.2rem;
+        }
+  }
+
+  .scroll {
+    display: block;
+    position: relative;
+    top: 200px;
+    color: #d8e0e6;
+    @include sm {
+      display: none;
+    }
+  }
+
+  .story-text {
+    p {
+      display: none;
+      @include sm {
+        display: block;
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+    }
+    a {
+      display: block;
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+
+  .main-content {
+    h1, h2, h3, span, hr, p, a {
+      position: relative;
+      z-index: 100;
+    }
+  }
+  //Vue JS Countdown Overrides
+  .vuejs-countdown {
+    position: relative;
+    top: 200px;
+    @include sm {
+      top: 0;
+    }
+    li {
+      color: #fff;
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+  .main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 15%;
+    z-index: 5;
+  }
+
+  .bottom-left {
+    bottom: 0;
+    top: 15%;
+    padding: 1rem;
+    margin: 0 1rem;
+    text-align: left;
+  }
+
+  .top-right {
+    bottom: 25%;
+    padding: 1rem;
+    margin: 0 1rem;
+    text-align: right;
+    @include sm {
+      left: 25%;
+    }
+  }
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0, 0.5);
+      -moz-transition: all .2s linear;
+      -webkit-transition: all .2s linear;
+      -ms-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      z-index:3
+    }
+  }
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url("./assets/pic5.jpg");
+    background-repeat: no-repeat;
+    @include sm {
+      background-image: url("./assets/pic1.jpg");
+      background-position-y: calc(100% - 65%);
+    }
+	}
+	#section1{
+		background-image: url("./assets/church.jpg");
+		padding: 6% 0 0 0;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 1%);
+    @include sm {
+      background-image: url("./assets/churchinterior.jpg");
+      background-position: center;
+    }
+	}
+	#section2{
+		background-image: url("./assets/pic2.jpg");
+		padding: 6% 0 0 0;
+    background-position-x: -45px;
+    @include sm {
+      background-position-x: 0;
+    }
+	}
+  #section3{
+    background-image: url("./assets/pic6.jpg");
+    padding: 6% 0 0 0;
+    background-position-x: -250px;
+    @include sm {
+      background-position-x: 0;
+    }
+  }
+  #section4{
+    background-image: url("./assets/hotel.jpg");
+    padding: 6% 0 0 0;
+    background-position-x: -250px;
+    @include sm {
+      background-position-x: 0;
+    }
+  }
+  #section5{
+    background-image: url("./assets/amalfi.jpg");
+    padding: 6% 0 0 0;
+    background-position-x: -250px;
+    @include sm {
+      background-position-x: 0;
+    }
+  }
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+  #menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 70;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    li a {
+      color: $taupe;
+      text-decoration: none;
+    }
+  }
+
+  .no-show-mobile {
+    display: none;
+    @include sm {
+      display: block;
+    }
+  }
