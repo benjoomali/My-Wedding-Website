@@ -1,4 +1,5 @@
 # wedding
+You can view the website at http://danielleandbengetmarried.netlify.com
 
 ## Project setup
 ```
