@@ -59,7 +59,7 @@
           </div>
           <div class="section" id="section4">
             <div class="main-content">
-              <h1>Hotel Accomodations</h1>
+              <h1>Hotel Accommodations</h1>
               <p class="description">We have a hotel block at the Hilton North in Glendale, CA. This hotel is a 2 minute walk from the venue. It is in a central location near popular places in the city like the Americana, the Glendale Galleria and Max's Chicken.</p>
               <a class="btn" href="https://www.hilton.com/en/hi/groups/personalized/B/BURHGHF-BDW-20191011/index.jhtml?WT.mc_id=POG" target="_blank" style="max-width: 300px; margin: 0 auto;"><font-awesome-icon icon="hotel" /> Click to Book</a>
             </div>
